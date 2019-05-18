@@ -685,6 +685,7 @@ function createStyleElement () {
 }
 
 function addStyle (obj /* StyleObjectPart */) {
+  return // don't add styles
   var update, remove
   var styleElement = document.querySelector('style[data-vue-ssr-id~="' + obj.id + '"]')
 
